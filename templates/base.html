@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>
 	{% block title %}haha{% endblock %}</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -15,23 +16,50 @@
 <body>
 	<header>
 		<nav>
+		{% block nav %}
 				<ul class="nav nav-tabs nav-justified navbar-fixed-top">
- 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#home">Home</a></li>
-  				<li class=" {% if name == "/login" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#login">Login</a></li>
-  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#food">Food</a></li>
-  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#travel">Travel</a></li>
+ 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="/index">Home</a></li>
+  				<li class=" {% if name == "/login" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="login">Login</a></li>
+  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="/food">Food</a></li>
+  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="/travel">Travel</a></li>
 				</ul>
+		{% endblock %}		
 		</nav>
 		{% block header %}
 		<h1>Zhe Li</h1>
 		{% endblock %}
 	</header>
+	<body>
+		<div class="wrapper">
+		<div class="push"></div>
 		{% block bodycontent %}
 		I should never see this content.  It should be replaced.
 		{% endblock %}
-	<footer>
-		<p>Copyright &copy; Zhe Li from <a href="http://umich.edu">University of Michigan</a>.</p>
+		</div>
+	</body>
+	<footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-12 col-lg-12">
+					<p>Copyright &copy; Zhe Li</p>
+					<ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 	</footer>
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

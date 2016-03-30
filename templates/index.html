@@ -9,6 +9,14 @@
 <h2>Do my best and lead a romantic life.</h2>
 </div>
 {% endblock %}
+{% block nav %}
+				<ul class="nav nav-tabs nav-justified navbar-fixed-top">
+ 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Home</a></li>
+  				<li class=" {% if name == "/login" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Login</a></li>
+  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Food</a></li>
+  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Travel</a></li>
+				</ul>
+{% endblock %}	
 {% block bodycontent %}
 <div class="container">
 	<div class="row">
@@ -28,6 +36,7 @@
 			<p>For proud despair! </p>
 			<p>But we, though soon they fall, Survive their joy and all,</p>
 			<p> Which ours we call.</p><br/>
+			<p>---Mutability by Shelley </p><br/>
 		</div>
  		<div class="col-lg-4 col-md-4 text-center">
 			<p>Whilst skies are blue and bright, </p>
@@ -37,11 +46,65 @@
 			<p>Whilst yet the calm hours creep, </p>
 			<p>Dream thou-and from thy sleep, </p>
 			<p>Then wake to weep.</p><br/>
-			<p id="annotation">---Mutability by Shelley </p><br/>
 		</div>
 	</div>
 	<div class="row">
-
-<p> The poem was written by the great poet Shelley. Life is so precious for its mutability. For me, there are three things in life that can't be lived up to. They are reading, food, travel. </p>
-<p>Welcome to my portfolio! I will lead you to see a beatiful life of mine!</p>
+		<div class="col-lg-12 col-md-12 text-center">
+			<div class="description">
+			<p> The poem was written by the great poet Shelley. Life is so precious for its mutability. For me, there are three things in life that can't be lived up to. They are reading, food, travel. </p>
+			<p>Welcome to my portfolio! I will lead you to see a beatiful life of mine!</p></div>
+<section id="imagelink">
+	<div class="row">
+		<div class="col-lg-6 col-md-6">
+			<div class="thumbnail">
+				<a href="/index" class="portfolio-link">
+					<div class="caption">
+                        <div class="caption-content">
+                        	<h2>Home</h2>
+                        	<p>This is the homepage of my portfolio.</p>
+                        </div>
+                    </div>
+				<img src="static/home.jpg" alt="homepicture" class="img-responsive"/>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="/food" class="portfolio-link">
+					<div class="caption">
+                        <div class="caption-content">
+                        	<h2>Food</h2>
+                        	<p>Food make life colourful.</p>
+                        	<p>Come and see my favorite food.</p>
+                        </div>
+                    </div>
+				<img src="static/food.jpg" alt="foodpicture" class="img-responsive"/>
+				</a>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6">
+			<div class="thumbnail">
+				<a href="/login" class="portfolio-link">
+					<div class="caption">
+                        <div class="caption-content">
+                        	<h2>Login</h2>
+                        	<p>Log in and give me some suggestions.</p>
+                        </div>
+                    </div>
+				<img src="static/login.jpg" alt="loginpicture" class="img-responsive"/>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="/travel" class="portfolio-link">
+					<div class="caption">
+                        <div class="caption-content">
+                        	<h2>Travel</h2>
+                        	<p>I love travel so much.</p>
+                        	<p>Come with me to see the wonderful places.</p>
+                        </div>
+                    </div>
+				<img src="static/travel.jpg" alt="travelpicture" class="img-responsive"/>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
 {%endblock%}

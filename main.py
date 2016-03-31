@@ -38,23 +38,18 @@ class IndexHandler(webapp2.RequestHandler):
             self.response.write(template.render({'name': 'index'}))
 
 
-class LoginHandler(webapp2.RequestHandler):
-    def get(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-        self.response.write(template.render({'name': '/login'}))
+# class LoginHandler(webapp2.RequestHandler):
+#     def get(self):
+#         template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+#         self.response.write(template.render({'name': '/contact'}))
 
-    def post(self):
-        if self.request.get('name') == 'Colleen' and self.request.get('pw') == 'pass':
-            template = JINJA_ENVIRONMENT.get_template('templates/loggedin.html')
-            self.response.write(template.render({'name': '/login'}))
-        else:
-            logging.info(
-                "********BAD LOGIN ATTEMPT: " + self.request.get('name') + " " + self.request.get('pw') + "********")
-            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-            self.response.write(template.render({'name': '/login', 'msg': 'Bad credentials. Try again.'}))
+#     def post(self):
+#         template = JINJA_ENVIRONMENT.get_template('templates/thankyou.html')
+#         self.response.write(template.render({'name': '/contact'}))
+        
 
 
 app = webapp2.WSGIApplication([
-    ('/login', LoginHandler),
+    # ('/contact', LoginHandler),
     ('/.*', IndexHandler)
 ], debug=True)

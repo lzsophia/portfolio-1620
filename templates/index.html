@@ -3,7 +3,7 @@
      Zhe Li's Portfolio
 {% endblock %}
 {% block header %}
-<img src="static/sea.jpg" class="title-image" alt="sea" style="width:100%;">
+<img src="static/sea.png" class="title-image" alt="sea" style="width:100%;">
 <div class="title-image">
 <h1>Beautiful Life</h1>
 <h2>Do my best and lead a romantic life.</h2>
@@ -11,10 +11,10 @@
 {% endblock %}
 {% block nav %}
 				<ul class="nav nav-tabs nav-justified navbar-fixed-top">
- 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Home</a></li>
-  				<li class=" {% if name == "/contact" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Contact</a></li>
-  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Food</a></li>
-  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a data-toggle="tab" href="#imagelink">Travel</a></li>
+ 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Home</a></li>
+  				<li class=" {% if name == "/contact" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Contact</a></li>
+  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Food</a></li>
+  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Travel</a></li>
 				</ul>
 {% endblock %}	
 {% block bodycontent %}

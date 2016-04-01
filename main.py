@@ -47,14 +47,14 @@ class MailHandler(webapp2.RequestHandler):
     def post(self):
         template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
         self.response.write(template.render({'msg': 'Your message has been sent.'}))
-        name=self.request.get("name")
-        phone=self.request.get("email")
-        email=self.request.get("phone")
-        message=self.request.get("message")
-        mail.send_mail(sender="<"+name+"@portfolio-1620.appspot.com>",
+        name=self.request.get('name')
+        phone=self.request.get('phone')
+        email=self.request.get('email')
+        message=self.request.get('message')
+        mail.send_mail(sender="<name@portfolio-1620.appspotmail.com>",
               to="Zhe Li <lzsophia@umich.edu>",
               subject="Website Contact Form",
-              body="You have received a new message from your website contact form.\n\n.Here are the details:\n\nName: "+name+"\n\nEmail: "+email+"\n\nPhone: "+phone+"\n\nMessage: "+message
+              body="You have received a new message from your website contact form.\n\nHere are the details:\n\nName: "+name+"\n\nEmail: "+email+"\n\nPhone: "+phone+"\n\nMessage: "+message
 )
 
 

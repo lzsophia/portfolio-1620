@@ -22,24 +22,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.title-image>div{
-	position:relative;
-}
-.title-image>h1,h2{
+.indextitle>h1,h2{
 	display: block;
 	position:absolute;
 	top:60px;
-	left:40%;
+	padding-right: 34%;
 	font-family: 'FontAwesome'，sans-serif;
 	font-size: 3em;
  	margin: 0.67em 0;
  	font-weight: bold;
  	color:#FDF2FF;
 }
-.title-image>h2{
+.indextitle>h2{
 	font-size: 2em;
 	top: 200px;
-	left:28%;
+  padding-left: 34%;
+	padding-right: 20%;
+  text-align: center;
 }
 div.indexp{
 	font-family: FontAwesome;
@@ -89,6 +88,8 @@ div.caption-content p{
 div.caption-content h2{
   color:white;
   font-size:3em;
+  text-align: center;
+  padding-left: 40%;
 }
 /*footer and inside button styling */
 footer {
@@ -246,7 +247,7 @@ div.contactme p{
 	left:10%;
 }
 hr.heart-primary {
-    margin: -1% auto 30px;
+    margin: 0 auto 30px;
     padding: 0;
     max-width: 80%;
     border: 0;
@@ -307,17 +308,25 @@ padding-bottom: 60px;
   font-family: FontAwesome;
   font-size: 17px;
   text-align: justify;
-  line-height: 1.8em;
+  line-height: 2em;
+  margin-top: 10px;
+}
+#ricenoodles{
+  margin-top: 20px;
 }
 #hotpot,#macaron{
     margin-top: 30px;
 }
+#macaron{
+  margin-bottom: 30px;
+}
 .hotpot p{
   line-height: 3em;
-  padding-top: 12px;
+  margin-top: 20px;
 }
 .macaron p{
   line-height: 3em;
-  padding-top: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 

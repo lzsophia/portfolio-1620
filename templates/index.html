@@ -11,10 +11,10 @@
 {% endblock %}
 {% block nav %}
 				<ul class="nav nav-tabs nav-justified navbar-fixed-top">
- 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Home</a></li>
-  				<li class=" {% if name == "/contact" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Contact</a></li>
-  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Food</a></li>
-  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a href="#imagelink">Travel</a></li>
+ 				<li class=" {% if name == "/index" or name == "index" %}active{% else %}inactive{% endif %}"><a href="#homeimg">Home</a></li>
+  				<li class=" {% if name == "/contact" %}active{% else %}inactive{% endif %}"><a href="#loginimg">Contact</a></li>
+  				<li class=" {% if name == "/food" %}active{% else %}inactive{% endif %}"><a href="#foodimg">Food</a></li>
+  				<li class=" {% if name == "/travel" %}active{% else %}inactive{% endif %}"><a href="#travelimg">Travel</a></li>
 				</ul>
 {% endblock %}	
 {% block bodycontent %}
@@ -53,9 +53,9 @@
 			<div class="description">
 			<p> The poem was written by the great poet Shelley. Life is so precious for its mutability. For me, there are three things in life that can't be lived up to. <br/>They are reading, food, travel.  I will lead you to see a beatiful life of mine! <br/>Welcome to my portfolio!</p></div>
 <section id="imagelink">
+	<div class="container">
 	<div class="row">
 		<div class="col-lg-6 col-md-6">
-			<div class="thumbnail">
 				<a href="/index" class="portfolio-link">
 					<div class="caption">
                         <div class="caption-content">
@@ -63,10 +63,23 @@
                         	<p>This is the homepage of my portfolio.</p>
                         </div>
                     </div>
-				<img src="static/home.jpg" alt="homepicture" class="img-responsive"/>
+				<img src="static/home.jpg" alt="homepicture" id="homeimg" class="img-responsive thumbnail"/>
 				</a>
-			</div>
-			<div class="thumbnail">
+		</div>
+		<div class="col-lg-6 col-md-6">
+				<a href="/contact" class="portfolio-link">
+					<div class="caption">
+                        <div class="caption-content">
+                        	<h2>Contact</h2>
+                        	<p>Leave a message to me.</p>
+                        </div>
+                    </div>
+				<img src="static/login.jpg" alt="loginpicture" id="loginimg" class="img-responsive thumbnail"/>
+				</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6">
 				<a href="/food" class="portfolio-link">
 					<div class="caption">
                         <div class="caption-content">
@@ -75,23 +88,10 @@
                         	<p>Come and see my favorite food.</p>
                         </div>
                     </div>
-				<img src="static/food.jpg" alt="foodpicture" class="img-responsive"/>
+				<img src="static/food.jpg" alt="foodpicture" id="foodimg" class="img-responsive thumbnail"/>
 				</a>
-			</div>
 		</div>
 		<div class="col-lg-6 col-md-6">
-			<div class="thumbnail">
-				<a href="/contact" class="portfolio-link">
-					<div class="caption">
-                        <div class="caption-content">
-                        	<h2>Contact</h2>
-                        	<p>Leave a message to me.</p>
-                        </div>
-                    </div>
-				<img src="static/login.jpg" alt="loginpicture" class="img-responsive"/>
-				</a>
-			</div>
-			<div class="thumbnail">
 				<a href="/travel" class="portfolio-link">
 					<div class="caption">
                         <div class="caption-content">
@@ -100,10 +100,10 @@
                         	<p>Come with me to see the wonderful places.</p>
                         </div>
                     </div>
-				<img src="static/travel.jpg" alt="travelpicture" class="img-responsive"/>
+				<img src="static/travel.jpg" alt="travelpicture" id="travelimg" class="img-responsive thumbnail"/>
 				</a>
-			</div>
 		</div>
+	</div>
 	</div>
 </section>
 {%endblock%}

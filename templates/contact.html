@@ -31,14 +31,10 @@
     </div>
 </div>
 	<hr class="heart-primary">
+    <p id="successmsg">{{msg}}</p>
 	<div class="row">
-        <script type="text/javascript"> 
-            function submitFunction(){
-            alert("Your message has been sent");
-            }
-        </script> 
         <div class="col-lg-8 col-lg-offset-2 col-md-8">
-			<form method="post" action="/contact" onsubmit="submitFunction()" name="contactme" id="contactme" novalidate>
+			<form method="post" action="/contact" name="contactme" id="contactme" novalidate>
 				<div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Name</label>

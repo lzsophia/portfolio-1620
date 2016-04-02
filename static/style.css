@@ -62,24 +62,33 @@ background-color: #0B116E;
 	font-size: 1.2em;
 }
 #imagelink .portfolio-link .caption{
-    position: absolute;
-    width: 94%;
-    height: 47%;
-    opacity: 0;
+   position: absolute;
+   width:94%;
+   height: 94%;
+   opacity: 0;
+   margin-top: 2%;
     background-color:#0F0E87;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    -webkit-transition: all ease .6s;
+    -moz-transition: all ease .6s;
+    transition: all ease .6s;
 }
-
-#imagelink .portfolio-link .caption:hover {
-    opacity: 0.3;
+#imagelink .portfolio-link .thumbnail{
+  margin-top: 2%;
+}
+#imagelink .portfolio-link .caption:hover{
+  opacity:0.2;
 }
 div.caption-content p{
 	color:white;
 	font-size:2em;
 	position:relative;
 	top:150px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+div.caption-content h2{
+  color:white;
+  font-size:3em;
 }
 /*footer and inside button styling */
 footer {
@@ -147,6 +156,13 @@ h1{
 	left:42%;
 	text-align:center;
 	font-weight: bold;
+}
+#successmsg{
+  color:green;
+  font-family: 'FontAwesome'，sans-serif;
+  font-size: 1.8em;
+  text-align:center;
+  font-weight: bold;
 }
 .form-control {
   display: block;

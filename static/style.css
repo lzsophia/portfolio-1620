@@ -158,6 +158,14 @@ h1{
 	text-align:center;
 	font-weight: bold;
 }
+#contactheader:before{
+  content:"\f0e0";
+  color:#CA17C7;
+}
+#contactheader:after{
+  content:"\f1ae";
+  color:#CA17C7;
+}
 #successmsg{
   color:green;
   font-family: 'FontAwesome'，sans-serif;
@@ -221,6 +229,7 @@ hr,hr.star-primary{
 }
 hr.star-primary:after {
     content: "\f005";
+    color:#C7CA1B;
     display: inline-block;
     position: relative;
     top: 1em;
@@ -256,6 +265,7 @@ hr.heart-primary {
 }
 hr.heart-primary:after {
     content: "\f004";
+    color:#FF1F44; 
     display: inline-block;
     position: relative;
     top: -8em;
@@ -273,19 +283,27 @@ hr.heart-primary:after {
 #travel{
   margin-top:40px;
   left:44%;
+  color:#F5F2FF;
+}
+#travel:before,
+#travel:after{
+ content:"\f209";
+}
+#travelhr{
+  margin-top: 10px;
 }
 div.travelp,#food{
   position:absolute;
   left:10%;
   right:10%;
-  top:22%;
+  top:40%;
   font-family: FontAwesome;
   font-size: 1.2em;
   text-align: justify;
 }
 #travelafter{
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .carousel-inner img{
 position: relative;
@@ -304,6 +322,21 @@ padding-bottom: 60px;
   padding-right:30%;
 }
 /*food page styling*/
+#foodheader:after{
+  content: "\f0f5";
+}
+#foodheader:hover{
+  font-size:4em;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  color:#FF3FB3;
+}
+#foodhr{
+  margin-top: 10px;
+}
+#food{
+  top: 30%;
+}
 .rn p,.macaron p,.hotpot p{
   font-family: FontAwesome;
   font-size: 17px;

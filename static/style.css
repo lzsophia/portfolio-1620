@@ -29,16 +29,16 @@
 	padding-right: 34%;
 	font-family: 'FontAwesome'，sans-serif;
 	font-size: 3em;
- 	margin: 0.67em 0;
+ /*	margin: 0.67em 0;*/
  	font-weight: bold;
  	color:#FDF2FF;
-}
-.indextitle>h2{
-	font-size: 2em;
-	top: 200px;
-  padding-left: 34%;
-	padding-right: 20%;
   text-align: center;
+}
+.indextitle h2{
+  display: inline-block;
+	font-size: 1.2em;
+  top:200px;
+  left:30%;
 }
 div.indexp{
 	font-family: FontAwesome;
@@ -295,12 +295,15 @@ hr.heart-primary:after {
 }
 div.travelp,#food{
   position:absolute;
-  left:10%;
-  right:10%;
+  margin-left:2%;
+  margin-right: 2%;
   top:40%;
   font-family: FontAwesome;
   font-size: 1.2em;
   text-align: justify;
+}
+div.travelp{
+  position:relative;
 }
 #travelafter{
     max-width: 100%;
@@ -309,10 +312,16 @@ div.travelp,#food{
 .carousel-inner img{
 position: relative;
 left:30%;
+margin-bottom: 0;
 }
 #myCarousel{
-margin-top: 300px;
+/*margin-top: 60%;*/
 padding-bottom: 60px;
+}
+.carousel-control.right, .carousel-control.left {
+  color:#2528FF;
+  background-image:none;
+  bottom:26%;
 }
 .carousel-caption p{
   font-family: FontAwesome,Arial,sans-serif;
@@ -363,4 +372,115 @@ padding-bottom: 60px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
+@media screen and (min-width:320px){
+  nav{
+  margin-bottom:165px;
+}
+.indextitle>h1{
+  top:160px;
+  font-size: 1.5em;
+  left:42%;
+}
+.indextitle>h2{
+  top:260px;
+  color:#348C26;
+ padding-right: 10%;
+ left:12%;
+}
+#imagelink .portfolio-link .caption{
+   opacity: 1;
+   margin-top: 2%;
+   background-color:transparent;
+}
+#imagelink .portfolio-link .caption:hover{
+  opacity:1;
+}
+div.caption-content h2{
+  top:50px;
+  margin-left:-5%;
+}
+div.caption-content p{
+display: none;
+}
+.header,#contactheader{
+  top:25%;
+  left:30%;
+  right:30%;
+  text-align: center;
+}
+#contactheader:after{
+  content:"";
+}
+hr.star-primary:after,hr.heart-primary:after {
+  content:"";
+}
+#contactmep1{
+  top:80%;
+  left: 8%;
+}
+#contactmep2{
+  top:80%;
+  left: 8%;
+}
+.form-control {
+  width: 60%;
+  margin-left: 10%;
+}
+.form-group button[type="submit"] {
+  margin-left: 10%;
+}
+.form-group button[type="submit"]:hover{
+  background-color:#111DFF;
+ }
+ div.form-group label{
+  margin-left: 10%;
+ }
+ #foodheader{
+  top:26%;
+ }
+ #foodheader:hover{
+  transition:none;
+}
+#food{
+  margin-left: 4%;
+  top:50%;
+}
+#travelbg{
+  margin-top:174px;
+}
+#travel{
+  font-size: 2em;
+}
+.carousel-caption h3{
+  font-size: 1em;
+}
+.carousel-caption p{
+  display: none;
+}
+#travelhr{
+  display: none;
+}
+}
+@media screen and (min-width:768px){
+  nav{
+  margin-bottom:41px;
+}
+.imagelink .portfolio-link .caption{
+   opacity: 1;
+   margin-top: 2%;
+   background-color:transparent;
+}
+#imagelink .portfolio-link .caption:hover{
+  opacity:1;
+}
+.indextitle>h1,h2{
+  top:60px;
+  font-size: 2.5em;
+}
+/*.indextitle>h2{
+  top:150px;
+  font-size:1.5em;
+  padding-left:40%;
+}*/
 
+}

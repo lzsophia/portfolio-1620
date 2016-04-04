@@ -158,14 +158,14 @@ h1{
 	text-align:center;
 	font-weight: bold;
 }
-#contactheader:before{
+/*#contactheader:before{
   content:"\f0e0";
   color:#CA17C7;
 }
 #contactheader:after{
   content:"\f1ae";
   color:#CA17C7;
-}
+}*/
 #successmsg{
   color:green;
   font-family: 'FontAwesome'，sans-serif;
@@ -285,10 +285,10 @@ hr.heart-primary:after {
   left:44%;
   color:#F5F2FF;
 }
-#travel:before,
+/*#travel:before,
 #travel:after{
  content:"\f209";
-}
+}*/
 #travelhr{
   margin-top: 10px;
 }
@@ -331,9 +331,9 @@ padding-bottom: 60px;
   padding-right:30%;
 }
 /*food page styling*/
-#foodheader:after{
+/*#foodheader:after{
   content: "\f0f5";
-}
+}*/
 #foodheader:hover{
   font-size:4em;
   transition-timing-function: linear;
@@ -379,12 +379,14 @@ padding-bottom: 60px;
   visibility: hidden;
 }
 .indextitle>h1{
+  display:block;
   top:200px;
   color:#1F29EC;
   font-size: 1.5em;
-  left:36%;
+  text-align: center;
 }
 .indextitle>h2{
+  display:block;
   top:250px;
   color:#1F29EC;
  left:24%;

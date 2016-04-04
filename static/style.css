@@ -346,7 +346,7 @@ padding-bottom: 60px;
 #food{
   top: 30%;
 }
-.rn p,.macaron p,.hotpot p{
+.fooddesp p{
   font-family: FontAwesome;
   font-size: 17px;
   text-align: justify;
@@ -362,11 +362,11 @@ padding-bottom: 60px;
 #macaron{
   margin-bottom: 30px;
 }
-.hotpot p{
+#hotpot p{
   line-height: 3em;
   margin-top: 20px;
 }
-.macaron p{
+#macaron p{
   line-height: 3em;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -414,7 +414,7 @@ div.caption-content p{
 }
 .header,#contactheader{
   top:24%;
-  left:30%;
+  display:block;
   text-align: center;
 }
 hr.star-primary{
@@ -429,6 +429,11 @@ hr.heart-primary{
 hr.star-primary:after,hr.heart-primary:after {
   display:none;
 }
+div.contactme p{
+  display:block;
+  text-align: left;
+  top:2.5em;
+}
 #contactmep1{
   top:2.5em;
   left: 6%;
@@ -440,38 +445,45 @@ hr.star-primary:after,hr.heart-primary:after {
 }
 .form-control {
   width: 60%;
-  margin-left: 10%;
+  margin-left: 8%;
 }
 .form-group button[type="submit"] {
-  margin-left: 10%;
+  margin-left: 8%;
 }
 .form-group button[type="submit"]:hover{
   background-color:#111DFF;
  }
  div.form-group label{
-  margin-left: 10%;
+  margin-left: 8%;
+ }
+ .text-danger{
+  margin-left: 6%;
  }
  #foodheader{
-  top:40%;
+  top:28%;
+  left:42%;
  }
 #food{
   margin-left: 4%;
-  top:60%;
+  top:46%;
 }
 #foodhr{
-  margin-top:3%;
+  visibility: hidden;
 }
 #fbg{
   visibility: hidden;
 }
+#ricenoodles{
+  margin-top: 3px;
+}
 #travelbg{
-  display:none;
+  visibility: hidden;
 }
 #travel{
   font-size: 2em;
   color: #1F29EC;
   left:42vw;
-  top:26%;
+  top:36%;
 }
 .carousel-caption h3{
   font-size: 1em;
@@ -483,20 +495,33 @@ hr.star-primary:after,hr.heart-primary:after {
  visibility: hidden;
 }
 }
-@media screen and (min-width:760px){
-  nav{
-  margin-bottom:165px;
+@media screen and (min-width:768px){
+ nav{
+  margin-bottom:41px;
+}
+.title-image img{
+  visibility: visible;
 }
 .indextitle>h1{
-  top:160px;
-  font-size: 1.5em;
+  top:60px;
+  color:#FDF2FF;
+  font-size: 2em;
   left:42%;
 }
 .indextitle>h2{
-  top:250px;
-  color:#57EC3F;
- padding-right: 10%;
- left:12%;
+  top:120px;
+  color:#FDF2FF;
+  font-size: 1.6em;
+  left:30%;
+}
+div.indexp,.description p{
+  color:black;
+}
+.portfolio-link img{
+  visibility: visible;
+}
+div.caption-content h2,div.caption-content p{
+  color:white;
 }
 #imagelink .portfolio-link .caption{
    opacity: 1;
@@ -508,63 +533,175 @@ hr.star-primary:after,hr.heart-primary:after {
 }
 div.caption-content h2{
   top:50px;
-  margin-left:-5%;
-}
-div.caption-content p{
-display: none;
 }
 .header,#contactheader{
-  top:25%;
-  left:30%;
-  right:30%;
-  text-align: center;
-}
-#contactheader:after{
-  content:"";
-}
-hr.star-primary:after,hr.heart-primary:after {
-  content:"";
-}
-#contactmep1{
-  top:80%;
-  left: 8%;
-}
-#contactmep2{
-  top:80%;
-  left: 8%;
+  top:4%;
 }
 .form-control {
-  width: 60%;
-  margin-left: 10%;
+  width: 80%;
+  margin-left: 8%;
 }
 .form-group button[type="submit"] {
-  margin-left: 10%;
+  margin-left: 8%;
 }
 .form-group button[type="submit"]:hover{
   background-color:#111DFF;
  }
  div.form-group label{
-  margin-left: 10%;
+  margin-left: 8%;
+ }
+ .text-danger{
+  margin-left: 6%;
+ }
+ div.contactme p{
+  display:block;
+  text-align: center;
  }
  #foodheader{
-  top:26%;
+  top:12%;
+  left:42%;
  }
 #food{
-  margin-left: 4%;
-  top:50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  top:30%;
+  font-size: 1.5em;
 }
 #travelbg{
-  margin-top:174px;
+  visibility: visible;
+  margin-top:41px;
 }
 #travel{
   font-size: 2em;
+  top:61px;
+  color:white;
 }
 .carousel-caption h3{
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .carousel-caption p{
-  display: none;
+  display: block;
+  font-size:1.2em;
 }
 #travelhr{
   display: none;
+}
+}
+@media screen and (min-width:992px){
+.indextitle>h1{
+  font-size: 3em;
+  left:42%;
+}
+.indextitle>h2{
+  font-size: 2em;
+  left:32%;
+}
+#imagelink .portfolio-link .caption{
+   position: absolute;
+   width:94%;
+   height: 90%;
+   opacity: 0;
+   margin-top: 2%;
+   background-color:#0F0E87;
+    -webkit-transition: all ease .6s;
+    -moz-transition: all ease .6s;
+    transition: all ease .6s;
+}
+.portfolio-link img{
+  margin-bottom: 6%;
+}
+#imagelink .portfolio-link .caption:hover{
+  opacity:0.2;
+  text-decoration: none;
+}
+.header,#contactheader{
+  top:4%;
+}
+.form-control {
+  display: block;
+  text-align: left;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  width: 100%;
+  margin-left: 2%;
+}
+.form-group button[type="submit"] {
+  color: #FDFFFA;
+  margin-left: 2%;
+}
+.form-group button[type="submit"]:hover{
+  background-color:#0B116E;
+ }
+ div.form-group label{
+  margin-left: 2%;
+ }
+ .text-danger{
+  margin-left: 2%;
+ }
+#contactheader{
+  left:42%;
+}
+hr.star-primary,
+hr.heart-primary{
+  display: block;
+}
+hr.heart-primary{
+  margin-bottom:30px;
+}
+#contactheader:after,
+hr.star-primary:after,hr.heart-primary:after {
+  display:inline;
+  left:8%;
+}
+hr.star-primary:after{
+  top:4em;
+}
+hr.heart-primary:after{
+  top:-5em;
+}
+div.contactme p{
+  text-align: left;
+}
+#travelhr{
+  display:block;
+  visibility: visible;
+  max-width: 95%;
+  margin-bottom: -30px;
+}
+#contactmep1{
+  position: relative;
+  top:-1em;
+  left: 6%;
+}
+#contactmep2{
+  position: relative;
+  top:-1em;
+  left:10%;
+}
+#fbg{
+  visibility: visible;
+}
+#food{
+  top:34%;
+  left:8%;
+  font-size: 1.2em;
+}
+#foodhr{
+  visibility: visible;
+}
+#hotpot,#macaron{
+    margin-top: 20px;
+}
+#travel{
+  font-size: 3em;
+}
+.carousel-caption h3{
+  font-size: 2em;
+}
+.carousel-caption p{
+  display: block;
+  font-size:1.5em;
+}
 }

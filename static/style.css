@@ -173,6 +173,9 @@ h1{
   text-align:center;
   font-weight: bold;
 }
+div.cc,div.cr{
+  max-width: 100%;
+}
 .form-control {
   display: block;
   /*width: 100%;*/
@@ -188,6 +191,9 @@ h1{
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 1, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 1, 0.075);
 }
+/*div#cform.col-lg-8 col-lg-offset-2 col-md-8{
+  padding:0px;
+}*/
 .form-control:focus {
   border-color: #2c3e50;
   outline: 0;
@@ -384,12 +390,15 @@ padding-bottom: 60px;
   color:#1F29EC;
   font-size: 1.5em;
   text-align: center;
+  left:32%;
+  right:32%;
 }
 .indextitle>h2{
   display:block;
   top:250px;
   color:#1F29EC;
- left:24%;
+  left:24%;
+  right:24%;
 }
 div.indexp,.description p{
   color:#1F29EC;
@@ -416,6 +425,8 @@ div.caption-content p{
 }
 .header,#contactheader{
   top:24%;
+  left:25%;
+  right:25%;
   display:block;
   text-align: center;
 }
@@ -425,7 +436,7 @@ hr.star-primary{
 hr.heart-primary{
   display: none;
 }
-#contactheader:after{
+span.glyphicon.glyphicon-earphone{
   display: none;
 }
 hr.star-primary:after,hr.heart-primary:after {
@@ -464,6 +475,7 @@ div.contactme p{
  #foodheader{
   top:28%;
   left:42%;
+  right:42%;
  }
 #food{
   margin-left: 4%;
@@ -484,7 +496,8 @@ div.contactme p{
 #travel{
   font-size: 2em;
   color: #1F29EC;
-  left:42vw;
+  left:36%;
+  right:36%;
   top:36%;
 }
 .carousel-caption h3{
@@ -538,6 +551,10 @@ div.caption-content h2{
 }
 .header,#contactheader{
   top:4%;
+  left:36%;
+}
+span.glyphicon.glyphicon-earphone{
+  display: inline;
 }
 .form-control {
   width: 80%;
@@ -592,11 +609,14 @@ div.caption-content h2{
 @media screen and (min-width:992px){
 .indextitle>h1{
   font-size: 3em;
-  left:42%;
+  left:36%;
+  right:36%;
 }
 .indextitle>h2{
   font-size: 2em;
-  left:32%;
+  top:160px;
+  left:28%;
+  right:28%;
 }
 #imagelink .portfolio-link .caption{
    position: absolute;
@@ -643,11 +663,15 @@ div.caption-content h2{
   margin-left: 2%;
  }
 #contactheader{
-  left:42%;
+  left:36%;
+  right:42%;
 }
 hr.star-primary,
 hr.heart-primary{
   display: block;
+}
+hr.star-primary{
+  margin-top: 150px;
 }
 hr.heart-primary{
   margin-bottom:30px;
@@ -655,7 +679,7 @@ hr.heart-primary{
 #contactheader:after,
 hr.star-primary:after,hr.heart-primary:after {
   display:inline;
-  left:8%;
+  left:4%;
 }
 hr.star-primary:after{
   top:4em;

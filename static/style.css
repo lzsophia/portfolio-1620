@@ -321,7 +321,7 @@ margin-bottom: 0;
 }
 #myCarousel{
 /*margin-top: 60%;*/
-padding-bottom: 60px;
+padding-bottom: 20px;
 }
 .carousel-control.right, .carousel-control.left {
   color:#2528FF;
@@ -347,10 +347,14 @@ padding-bottom: 60px;
   color:#FF3FB3;
 }
 #foodhr{
-  margin-top: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 #food{
   top: 30%;
+}
+div.fc{
+  margin-top:10px;
 }
 .fooddesp p{
   font-family: FontAwesome;
@@ -583,7 +587,7 @@ span.glyphicon.glyphicon-earphone{
 #food{
   margin-left: 2%;
   margin-right: 2%;
-  top:30%;
+  top:28%;
   font-size: 1.5em;
 }
 #travelbg{
@@ -710,7 +714,8 @@ div.contactme p{
   visibility: visible;
 }
 #food{
-  top:34%;
+  top:220px;
+  -moz-top:160px;
   left:8%;
   font-size: 1.2em;
 }
